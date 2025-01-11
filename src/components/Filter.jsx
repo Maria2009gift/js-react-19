@@ -1,4 +1,4 @@
-import { useMemo, useCallback, useState } from "react";
+import { useMemo, useState } from "react";
 
 function Filter() {
 
@@ -20,7 +20,7 @@ function Filter() {
                 (animal) => animal === inputValue
               );
               setAnimal(filteredAnimals)
-              console.log("Rendered");
+              // console.log("Rendered");
    
     }, [inputValue, listAnimals])
 
